@@ -9,6 +9,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { provideRouter } from '@angular/router';
 import { MarkdownModule, MARKED_OPTIONS } from 'ngx-markdown';
 import { routes } from './app.routes';
+import { AddComponentsToSelectorService } from './service/add-components-to-selector.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -26,5 +27,6 @@ export const appConfig: ApplicationConfig = {
       })
     ),
     provideAnimationsAsync(),
+    AddComponentsToSelectorService,
   ],
 };

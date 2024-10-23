@@ -10,6 +10,31 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              "infinite-scroll": "infinite-scroll 25s linear infinite",
+            },
+            keyframes: {
+              "infinite-scroll": {
+                from: { transform: "translateX(0)" },
+                to: { transform: "translateX(-100%)" },
+              },
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              sans: ["Lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <app-root></app-root>

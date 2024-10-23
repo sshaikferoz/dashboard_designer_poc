@@ -1,0 +1,17 @@
+<!-- <p-sidebar [(visible)]="visibleSidebar" position="left"> -->
+<h3>Components</h3>
+<div
+  *ngFor="let component of components"
+  class="draggable-item"
+  draggable="true"
+  (dragstart)="onDragStart($event, component)"
+>
+  {{ component.selector }}
+</div>
+<!-- </p-sidebar> -->
+<div
+  id="grid"
+  class="grid-stack"
+  (drop)="onDrop($event)"
+  (dragover)="onDragOver($event)"
+></div>

@@ -21,6 +21,7 @@
     "@angular/router": "^17.0.0",
     "angular-gridster2": "^18.0.1",
     "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.5",
     "gridstack": "^11.0.1",
     "ngx-markdown": "^18.1.0",
     "primeflex": "^3.3.1",

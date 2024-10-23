@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { TableModule } from 'primeng/table';
 import { CommonModule } from '@angular/common';
+import { BaseWidget, NgCompInputs } from 'gridstack/dist/angular';
+
 @Component({
   selector: 'app-primeng-table',
   standalone: true,
@@ -8,6 +10,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './primeng-table.component.html',
   styleUrl: './primeng-table.component.scss',
 })
-export class PrimengTableComponent {
+export class PrimengTableComponent extends BaseWidget {
   @Input() tableData: any[] = [];
 }
